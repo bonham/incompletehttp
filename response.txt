@@ -1,0 +1,13 @@
+HTTP/1.1 2x00 OK
+Date: Thu, 08 Jun 2023 19:51:30 GMT
+Server: Apache/2.4.56 (Debian)
+Content-Length: 130
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML>
+<html><head>
+<title>Hallo Du</title>
+</head><body>
+<h1>Hallo Duda</h1>
+<p>Good to be here</p>
+</body></html>
