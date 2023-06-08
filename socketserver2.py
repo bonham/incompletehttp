@@ -1,4 +1,5 @@
 import socketserver
+from time import sleep
 
 class MyTCPHandler(socketserver.StreamRequestHandler):
     """
@@ -19,11 +20,12 @@ class MyTCPHandler(socketserver.StreamRequestHandler):
       # to the client
       #self.wfile.write(self.data.upper())
 
-      with open('response.txt', 'r+b') as f:
+      with open('response-1.txt', 'r+b') as f:
           content = f.read()
       print("----")
       print(type(content))
       print(len(content))
+      # sleep(5)
       self.wfile.write(content)
 
 if __name__ == "__main__":

@@ -1,5 +1,8 @@
-from urllib.request import urlopen
+from urllib.request import urlopen, build_opener, HTTPDefaultErrorHandler
 from pprint import pprint as pp
+
+#opener = build_opener(HTTPDefaultErrorHandler)
+#with opener.open("http://localhost:9999") as r:
 
 with urlopen("http://localhost:9999") as r:
 #with urlopen("https://elfu.de") as r:
